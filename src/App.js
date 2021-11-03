@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { Boton, Titulos } from "./components";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Titulos variante="h4" contenido="Este es un titulo" />
+      <Boton variante="error" contenido="Es un error" />
+      <Boton variante="" contenido="No es un error" />
+    </>
   );
 }
-
-export default App;
